@@ -47,9 +47,9 @@ public class Main {
 
     public static boolean task10and20(){
         Scanner add1=new Scanner(System.in);
-        System.out.println ("\nЗАДАНИЕ №4 \nВведите число x1:");
+        System.out.println ("\nЗАДАНИЕ №4 \nВведите первое число:");
         int x1=add1.nextInt();
-        System.out.println ("Введите число x2:");
+        System.out.println ("Введите второе число:");
         int x2=add1.nextInt();
         int x=x1+x2;
         if(x>=10 && x<=20 ){
