@@ -35,14 +35,17 @@ public class Main {
     public static void calculate () {
         Scanner add = new Scanner(System.in);
         System.out.println ("\nЗАДАНИЕ №3 \nВведите число a:");
-        int a = add.nextInt();
+        double a = add.nextInt();
         System.out.println ("Введите число b:");
-        int b =add.nextInt();
+        double b =add.nextInt();
         System.out.println ("Введите число c:");
-        int c =add.nextInt();
+        double c =add.nextInt();
         System.out.println ("Введите число d:");
-        int d=add.nextInt();
-        System.out.print("Результат вычислений по формуле a*(b+(c/d)) равен: "+(a*(b+(c/d)))+"\n");
+        double d=add.nextInt();
+        if (d==0) {throw new RuntimeException("Нельзя делить на ноль!");}
+        else {System.out.print("Результат вычислений по формуле a*(b+(c/d)) равен: "+(a*(b+(c/d)))+"\n");}
+
+
     }
 
     public static boolean task10and20(){
@@ -52,10 +55,7 @@ public class Main {
         System.out.println ("Введите второе число:");
         int x2=add1.nextInt();
         int x=x1+x2;
-        if(x>=10 && x<=20 ){
-            return true;
-        }else{
-        return false;}
+        return x>=10 && x<=20;
 
 
     }
