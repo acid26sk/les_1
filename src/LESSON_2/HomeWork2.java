@@ -9,7 +9,7 @@ public class HomeWork2 {
         changeArray();
         fillDiagonal();
         minMaxArray();
-        System.out.println(checkbalance());
+        System.out.println(checkBalance());
         shiftArray();
     }
 
@@ -74,7 +74,7 @@ public class HomeWork2 {
         System.out.println(min + " " + max);
     }
 
-    public static boolean checkbalance() {
+    public static boolean checkBalance() {
         int[] arr6={1,3,6,5,3,1};
         int leftSum = 0;
         for (int i = 0; i < arr6.length; i++) {
