@@ -1,4 +1,4 @@
-package LESSON_3;
+package LESSON3;
 
 import java.util.Scanner;
 
@@ -11,11 +11,20 @@ public class Color {
         while (true) {
             printIf();
             switch (in.next()) {
-                case "1": colorRed(); break;
-                case "2": colorCyan(); break;
-                case "3": colorYellow(); break;
-                case "4": colorBlue(); break;
-                case "0": doExit();
+                case "1":
+                    colorRed();
+                    break;
+                case "2":
+                    colorCyan();
+                    break;
+                case "3":
+                    colorYellow();
+                    break;
+                case "4":
+                    colorBlue();
+                    break;
+                case "0":
+                    doExit();
                 default:
                     System.out.println("Попробуйте еще раз");
             }

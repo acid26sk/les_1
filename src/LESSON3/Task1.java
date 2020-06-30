@@ -1,4 +1,4 @@
-package LESSON_3;
+package LESSON3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,4 +46,6 @@ public class Task1 {
             }
         } while (true);
     }
+
+
 }
