@@ -1,19 +1,30 @@
 package LESSON3;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork3 {
 
+    static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args) {
-
-        printIf();
-        Scanner in = new Scanner(System.in);
-        int s=in.nextInt();
-        if(s == 1) {
-            Object object=new LESSON3.Task1();
-        } else{
-            Object object=new LESSON3.Task2();
+        while (true) {
+            printIf();
+            switch (in.next()) {
+                case "1":
+                    Task1();
+                    break;
+                case "2":
+                    Task2();
+                    break;
+                case "0":
+                    doExit();
+                default:
+                    System.out.println("Попробуйте еще раз");
+            }
         }
     }
 
@@ -21,13 +32,13 @@ public class HomeWork3 {
         System.out.println("\nВыберите задание:");
         System.out.println("1. Угадай число");
         System.out.println("2. Угадай слово");
+        System.out.println("0. Выход");
 
     }
 
 
 
-    /*public static class Task1 {
-        public static void main(String[] args) throws IOException {
+     public static void Task1() throws IOException {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
             do {
@@ -67,10 +78,9 @@ public class HomeWork3 {
                 }
             } while (true);
         }
-    }*/
 
-    /*public static class Task2 {
-        public static void main(String[] args) throws IOException {
+
+     public static void Task2() throws IOException {
             String[] words = {"apple", "orange", "lemon", "banana", "apricot",
                     "avocado", "broccoli", "carrot", "cherry", "garlic", "grape",
                     "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive",
@@ -115,17 +125,14 @@ public class HomeWork3 {
             s = sBuilder.toString();
             return s;
         }
-    }
-*/
-    /*public static void colorCyan() {
-        System.out.println("\u001B[36m");
-    }*/
 
-    /*private static void doExit() {
+
+
+    private static void doExit() {
         System.out.println("Вы уверены??? y/n");
         if (in.next().equals("y")) {
             System.exit(0);
         }
-    }*/
+    }
 
 }
