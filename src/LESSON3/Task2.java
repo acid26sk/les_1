@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 public class Task2 {
-    public static void main() throws IOException {
+    public void task2() throws IOException {
         String[] words = {"apple", "orange", "lemon", "banana", "apricot",
                 "avocado", "broccoli", "carrot", "cherry", "garlic", "grape",
                 "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive",

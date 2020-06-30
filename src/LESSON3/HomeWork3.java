@@ -13,11 +13,11 @@ public class HomeWork3 {
             switch (in.next()) {
                 case "1":
                     Task1 cl = new Task1();
-                    cl.main();
+                    cl.task1();
                     break;
                 case "2":
                     Task2 cl1 = new Task2();
-                    cl1.main();
+                    cl1.task2();
                     break;
                 case "0":
                     doExit();
