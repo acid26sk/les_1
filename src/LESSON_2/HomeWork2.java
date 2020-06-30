@@ -93,7 +93,6 @@ public class HomeWork2 {
     public static void shiftArray() {
         int[] arr7={2,5,8,12,6};
         int value=3;
-
         int last;
         last = arr7.length - 1;
         for (int i = 0; i < value; i++) {
