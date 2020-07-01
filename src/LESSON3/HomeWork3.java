@@ -19,6 +19,10 @@ public class HomeWork3 {
                     Task2 cl1 = new Task2();
                     cl1.task2();
                     break;
+                case "4":
+                    Task4 cl2 = new Task4();
+                    cl2.task4();
+                    break;
                 case "0":
                     doExit();
                 default:
@@ -31,6 +35,7 @@ public class HomeWork3 {
         System.out.println("\nВыберите задание:");
         System.out.println("1. Угадай число");
         System.out.println("2. Угадай слово");
+        System.out.println("4. Расчет суммы квадратов чисел Фибоначи");
         System.out.println("0. Выход");
 
     }
