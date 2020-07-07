@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 public class Task1 {
-    public void task1() throws IOException {
+    public static void task1() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         do {
