@@ -1,7 +1,6 @@
-package LESSON3;
+package LESSON_3;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.util.Scanner;
 
 
